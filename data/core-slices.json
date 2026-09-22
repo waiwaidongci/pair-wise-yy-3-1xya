@@ -13,6 +13,7 @@
         {
           "id": "SL-001-A",
           "method": "茜素红染色",
+          "slideId": "SLD-101",
           "observation": "",
           "status": "研磨",
           "logs": [
@@ -27,6 +28,48 @@
               "note": "完成粗切"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "stations": [
+    { "id": "WS-01", "name": "偏光显微扫描工位 01" },
+    { "id": "WS-02", "name": "偏光显微扫描工位 02" },
+    { "id": "WS-03", "name": "体式显微扫描工位 03" },
+    { "id": "WS-04", "name": "荧光显微扫描工位 04" }
+  ],
+  "orders": [
+    {
+      "id": "SO-20260618-7F3A",
+      "createdAt": "2026-06-18T01:30:00.000Z",
+      "sliceId": "SL-001-A",
+      "sampleId": "CORE-001",
+      "method": "茜素红染色",
+      "slideId": "SLD-101",
+      "stationId": "WS-01",
+      "status": "已核销",
+      "closedAt": "2026-06-18T03:05:00.000Z",
+      "returns": [
+        {
+          "at": "2026-06-18T03:05:00.000Z",
+          "resolution": "4096x3072",
+          "checksum": "9af3c1d27b60e451",
+          "operator": "周岚",
+          "cracked": false,
+          "passed": true,
+          "reasons": []
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-06-18T01:30:00.000Z",
+          "type": "出库",
+          "note": "核对通过：染色 茜素红染色｜载玻片 SLD-101｜工位 WS-01"
+        },
+        {
+          "at": "2026-06-18T03:05:00.000Z",
+          "type": "归还",
+          "note": "归还核销通过（分辨率 4096x3072｜校验码 9af3c1d27b60e451｜操作人 周岚）"
         }
       ]
     }
